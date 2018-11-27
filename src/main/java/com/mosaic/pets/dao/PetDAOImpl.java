@@ -1,5 +1,7 @@
 package com.mosaic.pets.dao;
 
+import java.util.List;
+
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -16,7 +18,7 @@ public class PetDAOImpl implements PetDAO {
 	@Override
 	public long save(Pet pet) {
 		sessionFactory.getCurrentSession().save(pet);
-		return pet.getId();
+		return pet.getPetId();
 	}
 
 	@Override
@@ -26,7 +28,7 @@ public class PetDAOImpl implements PetDAO {
 
 	@Override
 	public List<Pet> list() {
-		List<Pet> list = sessionFactory.getCurrentSession().createQuery("from Pet").list();
+		List<Pet> list =  sessionFactory.getCurrentSession().createQuery("from Pet").list();
 		return list;
 	}
 

@@ -7,7 +7,7 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter
 
 @Configuration
 @EnableWebMvc
-@ComponentScan(basePackages = {"com.springular.spring.controller"})
+@ComponentScan(basePackages = {"com.mosaic.pets.controller"})
 
 public class WebConfig extends WebMvcConfigurerAdapter {
 	

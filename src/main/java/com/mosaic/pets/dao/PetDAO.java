@@ -2,14 +2,6 @@ package com.mosaic.pets.dao;
 
 import java.util.List;
 
-import javax.transaction.Transactional;
-
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Service;
-
-import com.mosaic.pets.dao.PetDAO;
-
-
 import com.mosaic.pets.model.Pet;
 
 public interface PetDAO {

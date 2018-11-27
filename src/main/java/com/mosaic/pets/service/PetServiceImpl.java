@@ -11,10 +11,10 @@ import com.mosaic.pets.dao.PetDAO;
 import com.mosaic.pets.model.Pet;
 
 @Service
-public class PetServiceImpl {
+public class PetServiceImpl implements PetService {
 	
 	@Autowired
-	private BookDAO petDAO;
+	private PetDAO petDAO;
 	
 	@Override
 	@Transactional
@@ -24,13 +24,13 @@ public class PetServiceImpl {
 
 	@Override
 	@Transactional
-	public Book get(long id) {
+	public Pet get(long id) {
 		return petDAO.get(id);
 	}
 
 	@Override
 	@Transactional
-	public List<Book> list() {
+	public List<Pet> list() {
 		return petDAO.list();
 	}
 
