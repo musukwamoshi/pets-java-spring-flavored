@@ -23,8 +23,8 @@ import org.hibernate.cfg.Environment;*/
 @PropertySource("classpath:db.properties")
 @EnableTransactionManagement
 @ComponentScans(value={
-		@ComponentScan("com.springular.spring.dao"),
-		@ComponentScan("com.springular.spring.service")
+		@ComponentScan("com.mosaic.pets.dao"),
+		@ComponentScan("com.mosaic.pets.service")
 })
 
 public class AppConfig {
@@ -58,7 +58,7 @@ public class AppConfig {
 	      props.put(C3P0_MAX_STATEMENTS, env.getProperty("hibernate.c3p0.max_statements"));
 	 
 	      factoryBean.setHibernateProperties(props);
-	      factoryBean.setPackagesToScan("com.springular.spring.model");
+	      factoryBean.setPackagesToScan("com.mosaic.pets.model");
 	 
 	      return factoryBean;
 	}
