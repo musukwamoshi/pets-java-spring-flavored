@@ -66,6 +66,23 @@
       <version>3.1.0</version>
       <scope>provided</scope>
     </dependency>
+    <dependency>
+		<groupId>taglibs</groupId>
+		<artifactId>standard</artifactId>
+		<version>1.1.2</version>
+	</dependency>
+	<dependency>
+		<groupId>jstl</groupId>
+		<artifactId>jstl</artifactId>
+		<version>1.1.2</version>
+	</dependency>
+	<!-- https://mvnrepository.com/artifact/org.thymeleaf/thymeleaf -->
+	<dependency>
+    	<groupId>org.thymeleaf</groupId>
+    	<artifactId>thymeleaf</artifactId>
+    	<version>3.0.11.RELEASE</version>
+	</dependency>
+	
   </dependencies>
   <build>
     <finalName>pets</finalName>
